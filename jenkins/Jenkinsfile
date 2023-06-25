@@ -26,5 +26,10 @@ pipeline {
                 sh './jenkins/scripts/deliver.sh'
             }
         }
+        stage('Poll SCM Complete') {
+            steps {
+                echo "Poll SCM Succesfull"
+            }
+        }
     }
 }
